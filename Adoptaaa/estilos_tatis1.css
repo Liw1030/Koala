@@ -1,0 +1,229 @@
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+.titulo {
+    font-size: 24px; 
+    color: #181818;
+    font-weight:bold;
+    margin-bottom: 100px;
+}
+
+.contenido {
+    padding: 5px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo  {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.miboton {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.miboton:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.login  {
+    color: grey;
+    padding: 5px;
+}
+
+.login a {
+    color: blue;
+}
+
+.cuerpo {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.principal{
+    background-color:rgb(165, 202, 226);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado p {
+    padding: 0;
+}
+
+.articulos article {
+    margin-top: 20px;
+}
+
+.articulos img {
+    border-radius: 10px;
+}
+
+.my-shopping-btn {
+    float: right    ;
+}
+.adopta {
+    color: darkgreen;
+}
+
+
+
+
+
+
+.boton-naranja {  
+    background-color: rgb(201, 131, 103);
+    padding: 10px 40px;
+    margin-top: 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.boton-naranja:hover {  
+    background-color: rgb(241, 119, 71);
+    cursor: pointer;
+}
+
+.boton-verde {  
+    background-color: rgb(4, 114, 77);
+    padding: 10px 40px;
+    margin-top: 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.boton-verde:hover {  
+    background-color: rgb(4, 83, 57);
+    cursor: pointer;
+}
+
+.bg-image {   
+    background-image: url("images/WWF_adopción.png");
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bg-image .adopta {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.bg-image .adopta h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slogan {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.listado-animales {
+    list-style: none;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bg-tortuga {   
+    background-image: url("images/tortuga.jpg");
+}
+
+.bg-oso {   
+    background-image: url("images/oso_anteojos.jpg");
+}
+
+.bg-delfin {   
+    background-image: url("images/delfin.jpg");
+}
+
+.background-animal {   
+    background-size: cover;
+    height: 500px;
+    max-width: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.background-animal .contenido {   
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .listado-animales {
+        flex-direction: column;
+    }
+}
+
+.contenido-adopcion {
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contenido-adopcion h2 {
+    font-weight: bold;
+    color: rgb(4, 114, 77);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

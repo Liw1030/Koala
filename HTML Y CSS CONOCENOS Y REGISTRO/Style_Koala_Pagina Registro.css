@@ -1,0 +1,233 @@
+h1 {
+  color:rgb(201, 131, 103);
+  font-family: 'Fredoka', sans-serif;
+  font-size: 5rem
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  Font-size: 2rem;
+  font-family: 'Comfortaa', cursive;
+  color: rgb(4, 114, 77)
+  }
+h3 {
+  font-size: 1.5rem;
+  color:rgb(51, 187, 119);
+  font-family: 'Comfortaa', cursive;
+}
+strong {
+  color:rgb(51, 187, 119);
+  font-family: 'Comfortaa', cursive;
+  
+}
+
+/* Estilos para la Barra Navegacion Inicio codigo*/
+header{
+  width: 100%;
+  background: #fff; /* Tamano de la barra respecto a lo que ocupa horizontalmente en la página*/
+  clear: both;
+  display: table;
+  position: fixed;/* Fixed para que la barra siempre permanezca visible mientras nos desplazamos por la página*/
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999; /* Superposicion respecto a mas elementos de la pagina*/
+  max-width: 100%;
+  box-shadow: 5px 5px 15px peru;
+}
+
+.menu{
+  max-width: 1040px;
+  min-height: 40px;
+  max-height: 43px;
+  margin: auto;
+  display: flex;
+  
+}
+
+@media (max-width: 805px) {
+  .menu {
+    flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+    justify-content: center; /* Centra verticalmente los elementos en pantallas pequeñas */
+    min-height: auto; /* Elimina la altura mínima fija */
+    max-height: 150px; /* La altura maxima a la que puede crecer */
+  }
+}
+
+@media (max-width: 360px) {
+  .menu {
+    flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+    justify-content: center; /* Centra verticalmente los elementos en pantallas pequeñas */
+    min-height: auto; /* Elimina la altura mínima fija */
+    max-height: 170px; /* La altura maxima a la que puede crecer */
+  }
+}
+
+@media (max-width: 315px) {
+  .menu {
+    flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+    justify-content: center; /* Centra verticalmente los elementos en pantallas pequeñas */
+    min-height: auto; /* Elimina la altura mínima fija */
+    max-height: 200px; /* La altura maxima a la que puede crecer */
+  }
+}
+
+.contenedor-logo{
+  width: 20%;
+  display: flex;
+  justify-content: start;
+
+}
+
+@media (max-width: 970px) {
+  .contenedor-logo{
+    display: none; /* Desaparecer Logo a partir de pantallas menos a 600 px */
+  }
+}
+
+/* ESTE ES EL LOGO EXCLUSIVO QUE APARECE EN LA BARRA DE NAVEGACION*/
+.Logo_barra_nav{
+  width: 130px;
+  height: 60px;
+  float: left;
+  padding: 2px;
+  align-items: left;
+  display: flex;
+  justify-content :left
+}
+
+@media (max-width: 977px) {
+  .Logo_barra_nav{
+    width: 100px; /* Tamaño de la imagen para pantallas con un ancho máximo de 978px */
+  }
+}
+
+nav{
+  float: left;
+  color: #04724D;
+  width: 80%;
+}
+
+nav ul li{
+  list-style: none;
+  margin: left;
+  PADDING: 20px;
+  float: left;
+  border-color: #e7e7e7;
+}
+/* Estilo para la animación de los titulos de la barra de navegación*/
+ul a{
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(201, 131, 103);
+  font-family:'Fredoka', sans-serif;
+  MARGIN: 20PX;
+}
+
+ul a:hover{
+  transition: all 0.5s linear;
+  font-size: 17px;
+}
+
+
+.contenedor-imagen{
+  width: 20%;
+  height: 20%;
+}
+/* Propiedades para el GIF Koala*/
+.Img-logo{
+  width: 60px;
+  float: right;
+  padding: 2px;
+  align-items: right;
+  display: flex;
+  justify-content: right;
+}
+
+@media (max-width: 970px) {
+  .Img-logo{
+    display: none; /* Desaparecer Imagen Koala a partir de pantallas menos de 970px */
+  }
+}
+/* Estilos para la Barra Navegacion FIN codigo*/
+/* Estilos para la pagina de inicio de registro*/
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para evitar que la imagen se superponga a la otra columna cuando este disminuyendo el tamano de la pantalla a otro dispositivo*/
+.Imagen_Principal_Inicio_Sesion{
+  max-width: auto;
+  height: auto;
+  justify-content: center;
+}
+
+#Leyenda_Imagen_principal_Pagina_Registro{
+  text-align: left;
+  font-family: 'Comfortaa', cursive;
+  font-size: 11px;
+  flex-direction:column
+}
+  
+.logo {
+  text-align: center;
+  margin-bottom: 20px; /* Distancia o espacio desde el final del objeto hasta el siguiente*/
+}
+
+.logo img {
+  width: 250px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px; /* Distancia o espacio desde el final del objeto hasta el siguiente*/
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"] {
+  width: 80%; /* Tamano de rectangulo formulario segun anchura*/
+  padding: 10px; /* Tamano de rectangulo formulario segun altura*/
+  margin-bottom: 10px; /* Distancia o espacio desde el final del objeto hasta el siguiente*/
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+select{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 25px /* Distancia o espacio desde el final del objeto hasta el siguiente*/
+}
+
+
+input[type="submit"] {
+  width: 100%; /* Tamano del boton en largo */
+  padding: 10px; /* Tamano del boton en altura */
+  margin-bottom: 10px;
+  background-color: #02502ae3;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+footer {
+  margin-top: 50px; 
+  display: flex;
+  justify-content: center;
+  background-color: rgb(4, 114, 77); /* Establece el fondo de color en RGB  */
+  color: white; /* Establece el color de letra en blanco para que sea visible en el fondo */
+  
+  }
+/* Para igualar texto con el logo en la misma linea*/
+.footer-logo{
+width: 150px;
+text-align: center;
+
+}

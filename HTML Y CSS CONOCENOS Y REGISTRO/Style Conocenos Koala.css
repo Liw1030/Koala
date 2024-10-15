@@ -1,0 +1,325 @@
+/* En el tamano de letra la medida rem significa que toma como punto de partida el tamano de letra raiz de html 1rem seria igual al mismo tamano por defecto de html */
+.logo {
+  display: inline-block; /* Mantiene el icono del logo en línea con el texto */
+  vertical-align: middle; /* Alinea verticalmente el icono del logo */
+  margin-right: 10px; /* Añade un espacio de margen a la derecha del icono del logo */
+}
+
+h1 {
+  color:rgb(201, 131, 103);
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3.7rem
+}
+h2 {
+  Font-size: 2rem;
+  font-family: 'Comfortaa', cursive;
+  color: rgb(4, 114, 77)
+  }
+h3 {
+  font-size: 1.2rem;
+  color:rgb(51, 187, 119);
+  font-family: 'Comfortaa', cursive;
+}
+
+#letra1 {
+  color:rgb(201, 131, 103);
+  font-family: 'Fredoka', sans-serif;
+}
+
+#letra2_3 {
+  color: rgb(141,179, 139);
+  font-family: 'Fredoka', sans-serif;
+}
+
+
+#letra4 {
+  color:rgb(201, 131, 103);
+  font-family: 'Fredoka', sans-serif;
+}
+
+#letra5 {
+  color:rgb(141, 179, 139);
+  font-family: 'Fredoka', sans-serif;
+
+}
+
+/* Estilos para la Barra Navegacion Inicio codigo*/
+header{
+  width: 100%;
+  background: #fff; /* Tamano de la barra respecto a lo que ocupa horizontalmente en la página*/
+  clear: both;
+  display: table;
+  position: fixed;/* Fixed para que la barra siempre permanezca visible mientras nos desplazamos por la página*/
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999; /* Superposicion respecto a mas elementos de la pagina*/
+  max-width: 100%;
+  box-shadow: 5px 5px 15px peru;
+}
+
+.menu{
+  max-width: 1040px;
+  min-height: 40px;
+  max-height: 43px;
+  margin: auto;
+  display: flex;
+  
+}
+
+@media (max-width: 805px) {
+  .menu {
+    flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+    justify-content: center; /* Centra verticalmente los elementos en pantallas pequeñas */
+    min-height: auto; /* Elimina la altura mínima fija */
+    max-height: 150px; /* La altura maxima a la que puede crecer */
+  }
+}
+
+@media (max-width: 360px) {
+  .menu {
+    flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+    justify-content: center; /* Centra verticalmente los elementos en pantallas pequeñas */
+    min-height: auto; /* Elimina la altura mínima fija */
+    max-height: 170px; /* La altura maxima a la que puede crecer */
+  }
+}
+
+@media (max-width: 315px) {
+  .menu {
+    flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+    justify-content: center; /* Centra verticalmente los elementos en pantallas pequeñas */
+    min-height: auto; /* Elimina la altura mínima fija */
+    max-height: 200px; /* La altura maxima a la que puede crecer */
+  }
+}
+
+.contenedor-logo{
+  width: 20%;
+  display: flex;
+  justify-content: start;
+
+}
+
+@media (max-width: 970px) {
+  .contenedor-logo{
+    display: none; /* Desaparecer Logo a partir de pantallas menos a 600 px */
+  }
+}
+
+/* ESTE ES EL LOGO EXCLUSIVO QUE APARECE EN LA BARRA DE NAVEGACION*/
+.Logo_barra_nav{
+  width: 130px;
+  height: 60px;
+  float: left;
+  padding: 2px;
+  align-items: left;
+  display: flex;
+  justify-content :left
+}
+
+@media (max-width: 977px) {
+  .Logo_barra_nav{
+    width: 100px; /* Tamaño de la imagen para pantallas con un ancho máximo de 978px */
+  }
+}
+
+nav{
+  float: left;
+  color: #04724D;
+  width: 80%;
+}
+
+nav ul li{
+  list-style: none;
+  margin: left;
+  PADDING: 20px;
+  float: left;
+  border-color: #e7e7e7;
+}
+/* Estilo para la animación de los titulos de la barra de navegación*/
+ul a{
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(201, 131, 103);
+  font-family:'Fredoka', sans-serif;
+  MARGIN: 20PX;
+}
+
+ul a:hover{
+  transition: all 0.5s linear;
+  font-size: 17px;
+}
+
+
+.contenedor-imagen{
+  width: 20%;
+  height: 20%;
+}
+/* Propiedades para el GIF Koala*/
+.Img-logo{
+  width: 60px;
+  float: right;
+  padding: 2px;
+  align-items: right;
+  display: flex;
+  justify-content: right;
+}
+
+@media (max-width: 970px) {
+  .Img-logo{
+    display: none; /* Desaparecer Imagen Koala a partir de pantallas menos de 970px */
+  }
+}
+/* Estilos para la Barra Navegacion FIN codigo*/
+/* Estilos para el logo que se ha hecho con texto y tipografía*/
+.Logo_tipografia {
+
+  letter-spacing: -0.13em; /* Espaciado hacia la derecha entre letras del logo con distintos colores*/
+  font-size: 50px;
+}
+
+strong {
+font-family: 'Comfortaa', cursive;
+font-size: 23px;
+color: rgb(51, 187, 119)
+
+}
+.quienes-somos {
+  
+  position: relative;
+
+ }
+ .Seccion_principal_alinear-items-stretch {
+  min-height: 500px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Comfortaa', cursive;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.3)) /* Esta propiedad linear-gradient ME PERMITE DARLE OPACIDAD a imagen fondo sin afecta otros elementos*/, url(Imagenes/fondo-bosque-y-selva2.svg);
+  background-size: cover; /* Para hacer responsiva la imagen al aumentar y disminuir el tamano de la pantalla*/
+  background-position: center;
+  background-attachment: fixed; /*Mantiene a la imagen fija mientras se desplaza hacia abajo en la página para dar un efecto especial*/
+  min-height: 400px;/* Tamano de imagen en altura*/
+  margin-bottom: 0;
+  }
+  
+  .Seccion_principal_alinear-items-stretch .logo {
+    position: relative;
+    z-index: 1;
+    
+    }
+
+
+.quienes-somos-content {
+  margin-top: 0;
+  padding: 20px; /* Para centrar texto desde los bordes de cada contenedor */
+  text-align: left;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.3)) /* Esta propiedad linear-gradient ME PERMITE DARLE OPACIDAD a imagen fondo sin afecta otros elementos*/, url(Imagenes/waterfalls-1908788_1280.jpg);
+  background-size: cover; /* Para hacer responsiva la imagen al aumentar y disminuir el tamano de la pantalla*/
+  background-position: center;
+  background-attachment: fixed; /*Mantiene a la imagen fija mientras se desplaza hacia abajo en la página para dar un efecto especial*/
+  min-height: 400px;/* Tamano de imagen en altura*/
+  margin-bottom: 0;
+  color: rgb(252,247,255);
+ 
+  
+}
+/* Estilos generales para todo el documento, (RECUERDA, LA CLASE FLEX-DIRECTION: COLUMN ES ESPECIFICA DE BOOSTRAP) */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Para establecer color azul al pasar el mouse por textos que tengan link */
+
+p {
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  text-shadow: white;
+}
+
+/* Estilos para todas las filas de los contenedores de*/
+
+
+#Blanco_en_Contendedores_con_Fondo_Titulo {
+  font-family: 'Fredoka', sans-serif;
+  color: rgb(51,187, 119);
+}
+#Blanco_en_Contendedores_con_Fondo_Texto {
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Para establecer separacion entre los dos contenedores*/
+.primer_contenedor {
+  margin-bottom: 20px;
+}
+.DONDE_TRABAJAMOS{
+  font-family: 'Comfortaa', cursive;
+  font-size: 25px;
+  color:rgb(201, 131, 103);
+  padding: 50px;
+
+}
+/* Galeria de Imagenes seccion DONDE TRABAJAMOS*/
+.scrollable-gallery {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scrollable-gallery .row {
+  margin: 0;
+}
+
+.scrollable-gallery .col-sm-3 {
+  display: inline-block;
+  width: 25%;
+  white-space: normal;
+  vertical-align: top;
+  text-align: center;
+  padding: 10px;
+}
+
+.scrollable-gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Seccion inferior, proposito y enlace subscripción*/
+.contenedor_seccion_inferior {
+  min-height: 300px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Comfortaa', cursive;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.3)) /* Esta propiedad linear-gradient ME PERMITE DARLE OPACIDAD a imagen fondo sin afecta otros elementos*/, url(Imagenes/bokeh-animal-wildlife-zoo-red-mammal-188855-pxhere.com.jpg);
+  background-size: cover; /* Para hacer responsiva la imagen al aumentar y disminuir el tamano de la pantalla*/
+  background-position: center;
+  background-attachment: fixed; /*Mantiene a la imagen fija mientras se desplaza hacia abajo en la página para dar un efecto especial*/
+  min-height: 270px;/* Tamano de imagen en altura*/
+  margin-bottom: 0;
+}
+#Titulo_sección_inferior {
+  font-family:'Fredoka', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+ 
+footer {
+  margin-top: 50px; 
+  display: flex;
+  justify-content: center;
+  background-color: rgb(4, 114, 77); /* Establece el fondo de color en RGB  */
+  color: white; /* Establece el color de letra en blanco para que sea visible en el fondo */
+  
+  }
+/* Para igualar texto con el logo en la misma linea*/
+.footer-logo{
+width: 150px;
+text-align: center;
+
+}
+
